@@ -35,7 +35,7 @@ nav {
     bottom: 0;
     background-color: #009C9C;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.5s ease-out;
 }
 
 .nav-link:hover:after {
@@ -109,6 +109,10 @@ form button {
 .container {
     padding-top: 6rem;
     padding-bottom: 8rem;
+}
+
+nav .container {
+    padding: 0rem;
 }
 
 section {
@@ -364,6 +368,21 @@ pre {
 
 
 
+.pd-b-1 {
+    padding-bottom: 1rem;
+}
+
+.pd-b-2 {
+    padding-bottom: 2rem;
+}
+
+.pd-b-3 {
+    padding-bottom: 3rem;
+}
+
+.pd-b-4 {
+    padding-bottom: 4rem;
+}
 
 
 
@@ -400,7 +419,7 @@ pre {
 .card {
     text-align: center;
     border-radius: 16px;
-    border:none;
+    border: none;
     box-shadow: 0px 25px 50px #c0bba138;
     padding: 4rem;
 }
@@ -449,12 +468,12 @@ pre {
 .card-blue {
     background-color: #009C9C;
     color: #fff;
-        text-align: center;
-        border-radius: 16px;
-        border:none;
-        box-shadow: 0px 25px 50px #c0bba138;
-        padding: 4rem;
-    
+    text-align: center;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 25px 50px #c0bba138;
+    padding: 4rem;
+
 }
 
 .card-blue input {
@@ -511,3 +530,57 @@ pre {
     background: #009C9C;
     color: #fff;
 }
+
+/* FOOTER */
+footer {
+    background-color: #009C9C;
+    color: #fff;
+}
+
+footer .navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+footer .icon {
+    width: 48px;
+}
+
+footer ul {
+    list-style: none;
+    color: #fff;
+}
+
+footer ul a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+footer .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+
+footer .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+footer .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.footer-icons .icon {
+    cursor: pointer;
+}
+
