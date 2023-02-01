@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JobsComponent } from './jobs/jobs.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

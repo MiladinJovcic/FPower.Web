@@ -49,13 +49,9 @@ nav {
 }
 
 .btn {
-    --bs-btn-padding-x: 3rem;
-    --bs-btn-padding-y: 0.75rem;
-    --bs-btn-border-radius: 75rem;
     width: fit-content;
-
+    border-radius: 100rem;
 }
-
 
 .col-11 {
     display: flex;
@@ -68,11 +64,9 @@ nav {
 }
 
 .search-container i {
-    color: #009C9C;
+    color: #818181;
 }
 
-
-.search-container input {}
 
 .search-container input[type=text] {
     padding: 0.75rem 3rem 0.75rem 1.5rem;
@@ -179,28 +173,12 @@ h4 {
     font-style: normal;
 }
 
-
-
-
-
-
-
 h5 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
-}
-
-
-p {
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 blockquote {
@@ -405,16 +383,14 @@ pre {
 /* CARDS */
 
 .card {
-    text-align: center;
     border-radius: 16px;
     border: none;
-    box-shadow: 0px 25px 50px #c0bba138;
+    box-shadow: 0px 0px 20px #c0bba138;
     padding: 4rem;
 }
 
 .card-img-holder {
     display: flex;
-    justify-content: center;
     width: 200px;
     margin: auto;
 }
@@ -517,4 +493,94 @@ pre {
 .testem-arrows-holder button:hover {
     background: #009C9C;
     color: #fff;
+}
+
+
+.subhead {
+    background-color: #F1F1F1;
+}
+
+.tag-container {
+    align-items: baseline;
+}
+
+.subhead .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.tag {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 100rem;
+    width: fit-content;
+    margin-right: 0.5rem;
+}
+
+
+/* JOB CARD */
+
+.job-card {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.job-title h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: green;
+}
+
+.job-details-btn {
+    justify-content: flex-end;
+    width: fit-content;
+}
+
+.tag-container .tag {
+    border: 1px solid #D8D8D8;
+}
+
+.salary {
+    border: none;
+    background-color: aquamarine;
+}
+
+.job-desc {
+    max-width: 80%;
+}
+
+.badge-new {
+    background-color: #74D86C;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    max-height: 28px;
+
+}
+
+.badge-red {
+    background-color: #FF6565;
+}
+
+.badge-yellow {
+    background-color: #FFD601;
+}
+
+
+.fav-btn {
+    width: fit-content;
+    border: none;
+    background: none;
+    max-height: 30px;
+    display: flex;
+    align-items: stretch;
+    position: absolute;
+    right: 0rem;
+    top: 2rem;
+}
+
+.fav-btn>img {
+    fill: red;
 }

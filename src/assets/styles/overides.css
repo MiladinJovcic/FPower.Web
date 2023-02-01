@@ -1,118 +1,7 @@
-nav {
-    height: 100px;
-
-}
-
-.navbar .container-fluid {
-    max-width: 1170px;
-    margin: auto;
-}
-
-.navbar-nav {
-    flex-direction: row;
-    margin: auto;
-}
-
-.nav-link {
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-}
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #009C9C;
-}
-
-.nav-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: #009C9C;
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
-}
-
-.nav-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.nav-item {
-    padding: 0 1rem;
-}
-
-.btn {
-    --bs-btn-padding-x: 3rem;
-    --bs-btn-padding-y: 0.75rem;
-    --bs-btn-border-radius: 75rem;
-    width: fit-content;
-
-}
-
-.search-container {
-    float: right;
-}
-
-.search-container i {
-    color: #009C9C;
-}
-
-input[type=text] {
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    border: 1px solid #009C9C;
-    border-radius: 10rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-input:focus {
-    border: 2px solid #009C9C;
-    box-shadow: none;
-    outline: none;
-}
-
-.search-container input {
-    width: 50%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-
-form button {
-    background: none;
-    border: 1px solid #fff;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
-}
-
-
-
-.search-container button {
-    margin-left: -3rem;
-    background: none;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background: none;
-}
 
 .container {
     padding-top: 6rem;
     padding-bottom: 8rem;
-}
-
-nav .container {
-    padding: 0rem;
 }
 
 section {
@@ -121,22 +10,7 @@ section {
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
-/* 
-h1 {
-    color: var(--black-almost);
-    font-family: var(--font-family-raleway);
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 64px;
-}
 
-h3 {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #68717A;
-}
- */
 h1 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
@@ -177,11 +51,6 @@ h4 {
 }
 
 
-
-
-
-
-
 h5 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
@@ -193,11 +62,11 @@ h5 {
 
 p {
     font-family: Raleway;
-    font-size: 14px;
+    font-size: 1rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.5rem;
 }
 
 blockquote {
@@ -337,11 +206,6 @@ pre {
 }
 
 
-
-
-
-
-
 .pd-t-1 {
     padding-top: 1rem;
 }
@@ -411,9 +275,6 @@ pre {
 }
 
 
-
-
-
 /* CARDS */
 
 .card {
@@ -434,8 +295,6 @@ pre {
 .icon {
     width: 64px;
 }
-
-
 
 /* DECO */
 
@@ -476,60 +335,6 @@ pre {
 
 }
 
-.card-blue input {
-    margin-right: 1rem;
-}
-
-.card-blue button {
-    background: none;
-    border: 1px solid #fff !important;
-    border-radius: 70rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #fff;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-#testemonials .card {
-    text-align: left;
-    margin-top: 3rem;
-    position: relative;
-    padding-right: 11rem;
-}
-
-.home-testem-img {
-    position: absolute;
-    top: -25px;
-    right: -115px;
-    border-radius: 70rem;
-    width: 230px;
-    height: 230px;
-    background-image: url(/assets/img/busin-woman.jpg);
-    background-size: cover;
-}
-
-.testem-arrows-holder {
-    position: absolute;
-    bottom: 0;
-    right: -7rem;
-}
-
-.testem-arrows-holder button {
-    background: none;
-    color: #009C9C;
-    border: 1px solid #009C9C;
-    border-radius: 70rem;
-    font-size: 1rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 0.75rem;
-}
-
-.testem-arrows-holder button:hover {
-    background: #009C9C;
-    color: #fff;
-}
 
 /* FOOTER */
 footer {
@@ -588,11 +393,33 @@ footer .nav-link:hover:after {
 
 
 /* GLOBAL */
+/* 
+.row>* {
+    flex-shrink: 0;
+    max-width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0px !important;
+}
+ */
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+}
 
 .row {
-    margin-left: 0px !important;
+    margin: 0px !important;
 }
 
 .d-flex {
     display: flex;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.flex-end {
+    justify-content: flex-end;
 }
