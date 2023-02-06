@@ -2,13 +2,73 @@
     background-color: #F1F1F1;
 }
 
-.card-blog .card-img-holder img {
-    border-radius: 8px;
+.tag-container {
+    align-items: baseline;
+    flex-direction: row;
 }
 
-a {
-    text-decoration: none;
-    color: unset;
+.subhead .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.tag {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 100rem;
+    width: fit-content;
+    margin-right: 0.5rem;
+}
+
+.tag-container .tag {
+    border: 1px solid #D8D8D8;
+}
+
+.tag {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 100rem;
+    width: fit-content;
+    margin-right: 0.5rem;
+}
+
+.search-container {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.search-container i {
+    color: #818181;
+}
+
+.search-container input[type=text] {
+    padding: 0.75rem 3rem 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #818181;
+    border-radius: 10rem;
+    width: 100%;
+}
+
+.search-container input:focus {
+    border: 2px solid #009C9C;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-container button {
+    margin-left: -3rem;
+    background: none;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: none;
 }
 
 .card-blog {
@@ -88,4 +148,11 @@ p {
 a {
     text-decoration: none;
     color: unset;
+}
+
+.deco-square {
+    border: 1px solid #009C9C;
+    border-radius: 1rem;
+    width: 370px;
+    height: 370px;
 }

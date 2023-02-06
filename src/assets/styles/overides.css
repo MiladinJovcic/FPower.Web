@@ -1,7 +1,6 @@
-
 .container {
-    padding-top: 6rem;
-    padding-bottom: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 section {
@@ -9,8 +8,6 @@ section {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-
-
 h1 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
@@ -50,7 +47,6 @@ h4 {
     font-style: normal;
 }
 
-
 h5 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
@@ -58,7 +54,6 @@ h5 {
     font-weight: 600;
     font-style: normal;
 }
-
 
 p {
     font-family: Raleway;
@@ -110,9 +105,6 @@ pre {
     margin-top: 6rem !important;
 }
 
-
-
-
 .mr-1 {
     margin-right: 1rem;
 }
@@ -128,8 +120,6 @@ pre {
 .mr-6 {
     margin-right: 6rem;
 }
-
-
 
 .pd-1 {
     padding: 1rem;
@@ -155,7 +145,6 @@ pre {
     padding: 6rem;
 }
 
-
 .pd-r-1 {
     padding-right: 1rem;
 }
@@ -179,7 +168,6 @@ pre {
 .pd-r-6 {
     padding-right: 6rem;
 }
-
 
 .pd-l-1 {
     padding-left: 1rem;
@@ -205,7 +193,6 @@ pre {
     padding-left: 6rem;
 }
 
-
 .pd-t-1 {
     padding-top: 1rem;
 }
@@ -230,8 +217,6 @@ pre {
     padding-top: 6rem;
 }
 
-
-
 .pd-b-1 {
     padding-bottom: 1rem;
 }
@@ -247,8 +232,6 @@ pre {
 .pd-b-4 {
     padding-bottom: 4rem;
 }
-
-
 
 .pd-1 {
     padding: 1rem;
@@ -296,6 +279,7 @@ pre {
     width: 64px;
 }
 
+
 /* DECO */
 
 .deco-square {
@@ -309,7 +293,6 @@ pre {
     border-radius: 1rem;
     width: 480px;
     height: 480px;
-
 }
 
 .home-interview-img {
@@ -324,6 +307,25 @@ pre {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.blog-header-img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 1rem;
+    width: 370px;
+    height: 370px;
+    background-image: url(/assets/img/busin-woman.jpg);
+    background-size: cover;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.blog-deco-square {
+    border: 1px solid #009C9C;
+    border-radius: 1rem;
+    width: 370px;
+    height: 370px;
+}
+
 .card-blue {
     background-color: #009C9C;
     color: #fff;
@@ -332,11 +334,11 @@ pre {
     border: none;
     box-shadow: 0px 25px 50px #c0bba138;
     padding: 4rem;
-
 }
 
 
 /* FOOTER */
+
 footer {
     background-color: #009C9C;
     color: #fff;
@@ -390,9 +392,9 @@ footer .nav-link:hover:after {
 }
 
 
-
-
 /* GLOBAL */
+
+
 /* 
 .row>* {
     flex-shrink: 0;
@@ -402,10 +404,10 @@ footer .nav-link:hover:after {
     margin: 0px !important;
 }
  */
+
 .container {
     padding-left: 0px !important;
     padding-right: 0px !important;
-
 }
 
 .row {
@@ -422,4 +424,18 @@ footer .nav-link:hover:after {
 
 .flex-end {
     justify-content: flex-end;
+}
+
+.breadcrumbs ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.breadcrumbs ul li {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.subhead {
+    background-color: #F1F1F1;
 }

@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JobsComponent } from './jobs/jobs.component';
 import { JobComponent } from './job/job.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { JobComponent } from './job/job.component';
     MessagesComponent,
     DashboardComponent,
     JobsComponent,
-    JobComponent
+    JobComponent,
+    BlogComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,

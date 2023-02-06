@@ -3,39 +3,38 @@
 <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
 
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" routerLink="/dashboard">
-      <img src="./assets/img/logo.svg">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/dashboard">
+            <img src="./assets/img/logo.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/jobs">Poslovi</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/jobs">Poslovi</a>
+                </li>
 
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/companies">Poslodavci</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/companies">Poslodavci</a>
+                </li>
 
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/detail">Za poslodavce</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/detail">Za poslodavce</a>
+                </li>
 
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/companies">Blog</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/blog">Blog</a>
+                </li>
 
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/companies">O nama</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/companies">O nama</a>
+                </li>
 
 
-        <!--  <li class="nav-item dropdown">
+                <!--  <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
@@ -47,17 +46,17 @@
           </ul>
         </li> -->
 
-      </ul>
-      <!--       <form class="d-flex">
+            </ul>
+            <!--       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
-    </div>
+        </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
-      <button class="btn btn-sm btn-outline-primary" (click)="open(demoModal)">Prijavi se</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
+            <button class="btn btn-sm btn-outline-primary" (click)="open(demoModal)">Prijavi se</button>
+        </div>
     </div>
-  </div>
 </nav>
 <!-- 
 <div class="container-fluid py-3">
@@ -93,31 +92,29 @@
 
 <!-- LOGIN MODAL -->
 <ng-template #demoModal let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Please login</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-      (click)="modal.dismiss('Cross click')"></button>
-  </div>
-  <div class="modal-body">
-    <form>
-      <div class="row my-3">
-        <div class="col">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1"
-            placeholder="name@example.com">
-        </div>
-      </div>
-      <div class="row my-3">
-        <div class="col">
-          <label for="exampleFormControlInput1" class="form-label">Password</label>
-          <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="*******">
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">LOGIN</button>
-  </div>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Please login</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="row my-3">
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                    <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="*******">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">LOGIN</button>
+    </div>
 </ng-template>
 <!-- ///////////// -->
 
@@ -126,61 +123,60 @@
 
 
 <footer>
-  <div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
-      <div class="col-5">
-        <a class="navbar-brand">
-          <img src="./assets/img/logo.svg">
-        </a>
-        <h4 class="pd-t-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et</h4>
-        <div class="footer-icons pd-t-2">
-          <img class="icon mr-1" src="./assets/icons/icon-fb.svg" alt="">
-          <img class="icon mr-1" src="./assets/icons/icon-ig.svg" alt="">
-          <img class="icon" src="./assets/icons/icon-tw.svg" alt="">
+            <div class="col-5">
+                <a class="navbar-brand">
+                    <img src="./assets/img/logo.svg">
+                </a>
+                <h4 class="pd-t-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h4>
+                <div class="footer-icons pd-t-2">
+                    <img class="icon mr-1" src="./assets/icons/icon-fb.svg" alt="">
+                    <img class="icon mr-1" src="./assets/icons/icon-ig.svg" alt="">
+                    <img class="icon" src="./assets/icons/icon-tw.svg" alt="">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/jobs">Poslovi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/companies">Poslodavci</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/detail">Za poslodavce</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/companies">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/companies">O nama</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="#">Privacy policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="#">Terms of use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="col-1"></div>
-      <div class="col-3">
-        <ul>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/jobs">Poslovi</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/companies">Poslodavci</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/detail">Za poslodavce</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/companies">Blog</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/companies">O nama</a>
-          </li>
-
-        </ul>
-      </div>
-
-      <div class="col-3">
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="#">Privacy policy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="#">Terms of use</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
 </footer>
