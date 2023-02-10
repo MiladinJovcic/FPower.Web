@@ -1,13 +1,11 @@
 nav {
     height: 100px;
-
 }
 
 .navbar .container-fluid {
     max-width: 1170px;
     margin: auto;
 }
-
 
 .navbar-nav {
     flex-direction: row;
@@ -53,7 +51,6 @@ nav {
     --bs-btn-padding-y: 0.75rem;
     --bs-btn-border-radius: 75rem;
     width: fit-content;
-
 }
 
 .search-container {
@@ -83,7 +80,6 @@ input:focus {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-
 form button {
     background: none;
     border: 1px solid #fff;
@@ -92,8 +88,6 @@ form button {
     cursor: pointer;
     padding: 1rem;
 }
-
-
 
 .search-container button {
     margin-left: -3rem;
@@ -134,6 +128,7 @@ h3 {
     color: #68717A;
 }
  */
+
 h1 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
@@ -173,12 +168,6 @@ h4 {
     font-style: normal;
 }
 
-
-
-
-
-
-
 h5 {
     color: var(--black-almost);
     font-family: var(--font-family-raleway);
@@ -186,7 +175,6 @@ h5 {
     font-weight: 600;
     font-style: normal;
 }
-
 
 p {
     font-family: Raleway;
@@ -238,9 +226,6 @@ pre {
     margin-top: 6rem !important;
 }
 
-
-
-
 .mr-1 {
     margin-right: 1rem;
 }
@@ -256,8 +241,6 @@ pre {
 .mr-6 {
     margin-right: 6rem;
 }
-
-
 
 .pd-1 {
     padding: 1rem;
@@ -282,7 +265,6 @@ pre {
 .pd-6 {
     padding: 6rem;
 }
-
 
 .pd-r-1 {
     padding-right: 1rem;
@@ -308,7 +290,6 @@ pre {
     padding-right: 6rem;
 }
 
-
 .pd-l-1 {
     padding-left: 1rem;
 }
@@ -333,12 +314,6 @@ pre {
     padding-left: 6rem;
 }
 
-
-
-
-
-
-
 .pd-t-1 {
     padding-top: 1rem;
 }
@@ -362,11 +337,6 @@ pre {
 .pd-t-6 {
     padding-top: 6rem;
 }
-
-
-
-
-
 
 .pd-1 {
     padding: 1rem;
@@ -393,9 +363,6 @@ pre {
 }
 
 
-
-
-
 /* CARDS */
 
 .card {
@@ -403,7 +370,7 @@ pre {
     border-radius: 16px;
     border: none;
     box-shadow: 0px 25px 50px #c0bba138;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .card-img-holder {
@@ -416,7 +383,6 @@ pre {
 .icon {
     width: 64px;
 }
-
 
 
 /* DECO */
@@ -432,7 +398,6 @@ pre {
     border-radius: 1rem;
     width: 480px;
     height: 480px;
-
 }
 
 .home-interview-img {
@@ -455,7 +420,6 @@ pre {
     border: none;
     box-shadow: 0px 25px 50px #c0bba138;
     padding: 6rem;
-
 }
 
 .card-blue input {
@@ -475,9 +439,9 @@ pre {
 
 #testemonials .card {
     text-align: left;
-    margin-top: 3rem;
     position: relative;
     padding-right: 11rem;
+    min-height: 18rem;
 }
 
 .home-testem-img {

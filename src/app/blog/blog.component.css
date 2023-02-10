@@ -7,11 +7,6 @@
     flex-direction: row;
 }
 
-.subhead .container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
 .tag {
     font-size: 14px;
     line-height: 1;
