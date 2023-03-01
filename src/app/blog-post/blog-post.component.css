@@ -1,0 +1,27 @@
+.grey-box {
+    background-color: #F1F1F1;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.spacer-grey {
+    border-top: 1px solid #a8a8a8;
+    margin-top: auto;
+    height: 1px;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.quote {
+    text-align: center;
+}
+
+.quote em {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #009C9C;
+}

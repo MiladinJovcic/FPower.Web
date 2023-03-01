@@ -1,0 +1,23 @@
+.grey-box {
+    background-color: #F1F1F1;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.quote {
+    text-align: center;
+}
+
+.quote em {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #009C9C;
+}
+
+ul {
+    list-style: none;
+}

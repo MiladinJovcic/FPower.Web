@@ -1,0 +1,478 @@
+nav {
+    height: 100px;
+}
+
+.navbar .container-fluid {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    margin: auto;
+}
+
+.nav-link {
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #009C9C;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #009C9C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+.btn {
+    --bs-btn-padding-x: 3rem;
+    --bs-btn-padding-y: 0.75rem;
+    --bs-btn-border-radius: 75rem;
+    width: fit-content;
+}
+
+.search-container {
+    float: right;
+}
+
+.search-container i {
+    color: #009C9C;
+}
+
+input[type=text] {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #009C9C;
+    border-radius: 10rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input:focus {
+    border: 2px solid #009C9C;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-container input {
+    width: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form button {
+    background: none;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.search-container button {
+    margin-left: -3rem;
+    background: none;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: none;
+}
+
+.container {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+
+section {
+    margin: auto;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* 
+h1 {
+    color: var(--black-almost);
+    font-family: var(--font-family-raleway);
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #68717A;
+}
+ */
+
+h1 {
+    color: var(--black-almost);
+    font-family: var(--font-family-raleway);
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 64px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+h2 {
+    color: var(--black-almost);
+    font-family: var(--font-family-raleway);
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 56px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+h3 {
+    color: var(--black-almost);
+    font-family: var(--font-family-raleway);
+    font-size: 26px;
+    line-height: 1.1;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+}
+
+h4 {
+    color: var(--black-almost);
+    font-family: var(--font-family-raleway);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    color: var(--black-almost);
+    font-family: var(--font-family-raleway);
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: Raleway;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+.t-blue {
+    color: #009C9C;
+}
+
+
+/* HELPERS */
+
+.mt-1 {
+    margin-top: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-4 {
+    margin-top: 4rem !important;
+}
+
+.mt-6 {
+    margin-top: 6rem !important;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mr-4 {
+    margin-right: 4rem;
+}
+
+.mr-6 {
+    margin-right: 6rem;
+}
+
+.pd-1 {
+    padding: 1rem;
+}
+
+.pd-2 {
+    padding: 2rem;
+}
+
+.pd-3 {
+    padding: 3rem;
+}
+
+.pd-4 {
+    padding: 4rem;
+}
+
+.pd-5 {
+    padding: 5rem;
+}
+
+.pd-6 {
+    padding: 6rem;
+}
+
+.pd-r-1 {
+    padding-right: 1rem;
+}
+
+.pd-r-2 {
+    padding-right: 2rem;
+}
+
+.pd-r-3 {
+    padding-right: 3rem;
+}
+
+.pd-r-4 {
+    padding-right: 4rem;
+}
+
+.pd-r-5 {
+    padding-right: 5rem;
+}
+
+.pd-r-6 {
+    padding-right: 6rem;
+}
+
+.pd-l-1 {
+    padding-left: 1rem;
+}
+
+.pd-l-2 {
+    padding-left: 2rem;
+}
+
+.pd-l-3 {
+    padding-left: 3rem;
+}
+
+.pd-l-4 {
+    padding-left: 4rem;
+}
+
+.pd-l-5 {
+    padding-left: 5rem;
+}
+
+.pd-l-6 {
+    padding-left: 6rem;
+}
+
+.pd-t-1 {
+    padding-top: 1rem;
+}
+
+.pd-t-2 {
+    padding-top: 2rem;
+}
+
+.pd-t-3 {
+    padding-top: 3rem;
+}
+
+.pd-t-4 {
+    padding-top: 4rem;
+}
+
+.pd-t-5 {
+    padding-top: 5rem;
+}
+
+.pd-t-6 {
+    padding-top: 6rem;
+}
+
+.pd-1 {
+    padding: 1rem;
+}
+
+.pd-2 {
+    padding: 2rem;
+}
+
+.pd-3 {
+    padding: 3rem;
+}
+
+.pd-4 {
+    padding: 4rem;
+}
+
+.pd-5 {
+    padding: 5rem;
+}
+
+.pd-6 {
+    padding: 6rem;
+}
+
+
+/* CARDS */
+
+.card {
+    text-align: center;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 25px 50px #c0bba138;
+    padding: 2rem;
+}
+
+.card-img-holder {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+}
+
+.icon {
+    width: 64px;
+}
+
+
+/* DECO */
+
+.deco-square {
+    border: 1px solid #009C9C;
+    border-radius: 1rem;
+    width: 480px;
+    height: 480px;
+}
+
+.img-square {
+    border-radius: 1rem;
+    width: 480px;
+    height: 480px;
+}
+
+.home-interview-img {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    border-radius: 1rem;
+    width: 480px;
+    height: 480px;
+    background-image: url("/assets/img/busin-woman.jpg");
+    background-size: cover;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-blue {
+    background-color: #009C9C;
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 25px 50px #c0bba138;
+    padding: 6rem;
+}
+
+.card-blue input {
+    margin-right: 1rem;
+}
+
+.card-blue button {
+    background: none;
+    border: 1px solid #fff !important;
+    border-radius: 70rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#testemonials .card {
+    text-align: left;
+    position: relative;
+    padding-right: 11rem;
+    min-height: 18rem;
+}
+
+.home-testem-img {
+    position: absolute;
+    top: -25px;
+    right: -115px;
+    border-radius: 70rem;
+    width: 230px;
+    height: 230px;
+    background-image: url(/assets/img/busin-woman.jpg);
+    background-size: cover;
+}
+
+.testem-arrows-holder {
+    position: absolute;
+    bottom: 0;
+    right: -7rem;
+}
+
+.testem-arrows-holder button {
+    background: none;
+    color: #009C9C;
+    border: 1px solid #009C9C;
+    border-radius: 70rem;
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.75rem;
+}
+
+.testem-arrows-holder button:hover {
+    background: #009C9C;
+    color: #fff;
+}
