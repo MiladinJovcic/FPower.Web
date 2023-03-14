@@ -47,7 +47,17 @@
                         "tsConfig": "tsconfig.app.json",
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets"
+                            "src/assets",
+                            {
+                                "glob": "**/*",
+                                "input": "src/style/img",
+                                "output": "assets/img"
+                            },
+                            {
+                                "glob": "configuration.json",
+                                "input": "src/config",
+                                "output": "."
+                            }
                         ],
                         "styles": [
                             "./src/assets/styles/overides.css",
@@ -62,7 +72,8 @@
                     },
                     "configurations": {
                         "production": {
-                            "budgets": [{
+                            "budgets": [
+                                {
                                     "type": "initial",
                                     "maximumWarning": "500kb",
                                     "maximumError": "1mb"

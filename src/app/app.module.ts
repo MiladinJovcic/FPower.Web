@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,12 +9,18 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JobsComponent } from './jobs/jobs.component';
 import { JobComponent } from './job/job.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppConfigService } from './app-config.service';
 
+export function setupAppConfigServiceFactory(
+  service: AppConfigService
+): Function {
+  return () => service.load();
+}
 
 @NgModule({
   declarations: [
@@ -31,9 +37,19 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: setupAppConfigServiceFactory,
+      deps: [
+        AppConfigService
+      ],
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
